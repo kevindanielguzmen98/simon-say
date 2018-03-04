@@ -84,7 +84,7 @@ function nextLevel(currentLevel) {
                 swal({
                     buttons: true,
                     title: `You lost :C`,
-                    text: '¿Quieres jugar de nuevo?',
+                    text: 'Do you want to play again?',
                     buttons: {
                         si: {
                             value: true,
