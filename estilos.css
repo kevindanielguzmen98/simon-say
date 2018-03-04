@@ -1,0 +1,87 @@
+* {
+    font-family: 'Roboto', sans-serif;
+}
+
+body {
+    background-color:  black;
+    color: white;
+}
+
+#keyboard, #controls {
+    display: flex;
+    height: 100%;
+    justify-content: center;
+    flex-direction: column;
+}
+
+.row {
+    display: flex;
+    justify-content: center;
+    margin-bottom: 22px;
+}
+
+.row.last {
+    margin-left: -110px;
+}
+
+.key, .btn {
+    animation: appear 2.5s;
+    min-width: 80px;
+    padding: 36px 10px;
+    border: 4px solid white;
+    border-radius: 10px;
+    margin: 0 11px;
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 24px;
+    transition: all ease .5s;
+    cursor: pointer;
+}
+
+.key:hover, .btn:hover {
+    background: rgba(255, 255, 255, .1);
+}
+
+.btn {
+    padding: 10px 10px;
+}
+
+.key.active {
+    background-color: white;
+    color: black;
+}
+
+.key.active.success {
+    background-color: #2ecc71;
+    color: white;
+    border-color: #2ecc71;
+}
+  
+.key.active.fail {
+    background-color: #e74c3c;
+    color: white;
+    border-color: #e74c3c;
+}
+
+@keyframes appear {
+    0% {
+      color: black;
+      border-color: black;
+    }
+    100% {
+      color: white;
+      border-color: white;
+    }
+}
+
+.no-display {
+    display: none !important;
+}
+
+.display-flex {
+    display: flex;
+}
+
+h1 {
+    font-size: 3em;
+}
